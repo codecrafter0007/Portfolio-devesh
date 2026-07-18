@@ -10,7 +10,7 @@ export const profile = {
 };
 
 export const stats = [
-  { value: "35+", label: "Stores shipped" },
+  { value: "100+", label: "Stores shipped" },
   { value: "4", label: "Public Shopify apps" },
   { value: "5+", label: "Years in commerce dev" },
   { value: "7", label: "Devs led as team lead" },
