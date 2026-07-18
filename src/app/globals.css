@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #090c10;
+  --color-surface: #10141c;
+  --color-surface-2: #161b26;
+  --color-border: #222838;
+  --color-text: #eceff4;
+  --color-muted: #8a93a6;
+  --color-liquid-1: #45e8c4;
+  --color-liquid-2: #6c7cf7;
+  --color-accent-warm: #f2a65e;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-surface: var(--color-surface);
+  --color-surface-2: var(--color-surface-2);
+  --color-border: var(--color-border);
+  --color-text: var(--color-text);
+  --color-muted: var(--color-muted);
+  --color-liquid-1: var(--color-liquid-1);
+  --color-liquid-2: var(--color-liquid-2);
+  --color-accent-warm: var(--color-accent-warm);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-text);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-liquid-1);
+  color: var(--color-ink);
+}
+
+/* subtle film-grain noise overlay for texture */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+.font-display {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+/* liquid blob ambient motion */
+@keyframes drift-a {
+  0% { transform: translate(-6%, -4%) scale(1); }
+  50% { transform: translate(4%, 6%) scale(1.12); }
+  100% { transform: translate(-6%, -4%) scale(1); }
+}
+@keyframes drift-b {
+  0% { transform: translate(5%, 3%) scale(1); }
+  50% { transform: translate(-8%, -6%) scale(1.08); }
+  100% { transform: translate(5%, 3%) scale(1); }
+}
+.blob-a {
+  animation: drift-a 22s ease-in-out infinite;
+}
+.blob-b {
+  animation: drift-b 26s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 38s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob-a, .blob-b, .animate-marquee {
+    animation: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
