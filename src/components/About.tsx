@@ -10,26 +10,29 @@ export default function About() {
               01 · About
             </p>
             <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-text sm:text-4xl">
-              Five years deep in commerce&nbsp;dev.
+              Six years in full-stack development. Five in commerce.
             </h2>
           </div>
 
           <div className="space-y-6 text-[16px] leading-relaxed text-muted">
             <p>
-              I&apos;m a Senior Shopify Developer and Frontend Team Lead based
-              in Delhi, India. My work spans custom theme development,
-              headless builds, complex integrations, CRO-focused redesigns,
-              speed optimization, and Shopify app development — for brands
-              across fashion, jewelry, home &amp; living, flooring, skincare,
-              CBD, and food &amp; lifestyle.
+              I&apos;m a Senior Shopify Developer and Frontend Team Lead based in
+              Delhi, India, with six years of experience in full-stack development
+              and five years focused on commerce. My work spans custom theme
+              development, headless builds, complex integrations, CRO-focused
+              redesigns, speed optimization, and Shopify app development — for
+              brands across fashion, jewelry, home &amp; living, flooring,
+              skincare, CBD, and food &amp; lifestyle.
             </p>
+
             <p>
               I&apos;ve led a team of seven developers as Acting Frontend Team
-              Lead, run client-facing technical discovery, and shipped
-              production Shopify apps used by merchants beyond the stores I
-              build directly. I care about pages that load fast, checkouts
-              that don&apos;t leak conversion, and code the next developer
-              can actually read.
+              Lead, run client-facing technical discovery, and shipped production
+              Shopify apps used by merchants beyond the stores I build directly. I
+              work across Liquid, JavaScript, React, Next.js, Node.js, GraphQL,
+              Shopify APIs, and modern full-stack architecture. I care about pages
+              that load fast, checkouts that don&apos;t leak conversion, and code
+              the next developer can actually read.
             </p>
 
             <div className="grid gap-8 pt-4 sm:grid-cols-2">
@@ -48,6 +51,7 @@ export default function About() {
                   ))}
                 </ul>
               </div>
+
               <div>
                 <h3 className="font-mono text-[12px] uppercase tracking-widest text-text">
                   Languages

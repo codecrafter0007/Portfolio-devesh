@@ -13,7 +13,7 @@ export const stats = [
   { value: "100+", label: "Stores shipped" },
   { value: "4", label: "Public Shopify apps" },
   { value: "5+", label: "Years in commerce dev" },
-  { value: "7", label: "Devs led as team lead" },
+  { value: "6", label: "Years as Full-Stack Developer" },
 ];
 
 export const experience = [
@@ -23,10 +23,14 @@ export const experience = [
     place: "Delhi",
     period: "May 2025 — Present",
     points: [
-      "Leading development and customization of Shopify themes using Liquid, JavaScript, and modern frontend practices for high-conversion storefronts.",
-      "Building and maintaining custom Shopify apps and extensions to implement advanced business logic, integrations, and automation.",
-      "Designing and running A/B tests on product pages, cart, and checkout flows to improve conversion rate, AOV, and UX.",
-      "Implementing performance work — lazy loading, asset optimization, DOM cleanup — to improve page speed and Core Web Vitals.",
+      "Leading the development and customization of Shopify themes using Liquid, JavaScript, GraphQL, and modern frontend practices to build high-conversion storefronts.",
+      "Building and maintaining custom Shopify apps, Shopify Functions, checkout extensions, and integrations to implement advanced business logic, pricing rules, automation, and third-party services.",
+      "Developing headless Shopify commerce experiences using the Storefront API, GraphQL, React, Next.js, and Node.js to create flexible, scalable, and high-performance storefronts.",
+      "Designing and running A/B tests across product pages, cart, and checkout flows to improve conversion rate, average order value, customer engagement, and overall user experience.",
+      "Implementing performance optimization strategies including lazy loading, asset optimization, code splitting, image optimization, DOM cleanup, and Core Web Vitals improvements.",
+      "Integrating Shopify Admin API, Storefront API, webhooks, and third-party platforms to build reliable full-stack e-commerce workflows and automation.",
+      "Developing responsive, accessible, and conversion-focused user interfaces using React, JavaScript, HTML, CSS, and modern frontend development practices.",
+      "Building backend services and API integrations with Node.js and Next.js, including custom application logic, data synchronization, authentication, and server-side functionality.",
     ],
   },
   {
